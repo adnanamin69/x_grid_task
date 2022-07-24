@@ -75,16 +75,14 @@ class MainActivity : AppCompatActivity() {
         }
 
         binding.theme.setOnClickListener {
-
-            Toast.makeText(this, "working", Toast.LENGTH_SHORT).show()
+            //Toast.makeText(this, "working", Toast.LENGTH_SHORT).show()
             if (isNight) {
-                isNight = true
-                AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_YES)
-            } else {
                 isNight = false
                 AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO)
+            } else {
+                isNight = true
+                AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_YES)
             }
-
         }
     }
 }
